@@ -11,57 +11,112 @@
       box-sizing: border-box;
       font-family: 'Poppins', sans-serif;
     }
+
     body {
-      background: #f5f8ff;
-      color: #222;
-      padding: 2rem;
-      line-height: 1.8;
-    }
-    .container {
-      max-width: 800px;
-      margin: auto;
       background: #ffffff;
-      padding: 3rem;
-      border-radius: 16px;
-      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
-      animation: fadeIn 1s ease;
+      color: #222;
     }
-    h1 {
-      font-size: 2.5rem;
-      color: #1a237e;
-      margin-bottom: 1.5rem;
+
+    /* Navigation Bar */
+    nav {
+      background-color: #000;
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
     }
+
+    .logo {
+      font-size: 1.8rem;
+      font-weight: bold;
+      font-family: 'Georgia', serif;
+      letter-spacing: 2px;
+      color: white;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      margin-left: 1.5rem;
+      font-weight: 500;
+    }
+
+    .nav-links a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 2rem;
+    }
+
+    h1, h2 {
+      color: #000;
+      margin-bottom: 1rem;
+    }
+
     p {
       font-size: 1.1rem;
       margin-bottom: 1.2rem;
+      line-height: 1.7;
     }
-    strong {
-      color: #3949ab;
-    }
-    footer {
+
+    section {
       margin-top: 3rem;
-      text-align: center;
-      font-size: 0.95rem;
-      color: #777;
     }
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(30px); }
-      to { opacity: 1; transform: translateY(0); }
+
+    footer {
+      background: #000;
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 3rem;
+      font-size: 0.95rem;
+    }
+
+    /* Optional: Add smooth scroll behavior */
+    html {
+      scroll-behavior: smooth;
     }
   </style>
 </head>
 <body>
 
+  <!-- Navigation Bar -->
+  <nav>
+    <div class="logo">W</div>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#newsletter">Newsletter</a>
+      <a href="#contact">Contact Us</a>
+    </div>
+  </nav>
+
   <div class="container">
-    <h1>WealthyAdventures</h1>
-    <p><strong>We believe the world of investing is still gatekept.</strong> So we've taken it upon ourselves to talk openly about all things investing and growing wealth.</p>
-    <p>👋🏽 We are building one of the world's largest investing newsletters — a space to speak about changes in the financial and business world, and to create real impact in the lives of hundreds of thousands worldwide.</p>
-    <p>This is just the beginning. We're starting with newsletters — clear, actionable, jargon-free. Later, we'll expand to create an entire platform built for those who’ve been left out of the conversation for too long.</p>
-    <p><strong>Join us as we democratize wealth-building, one email at a time.</strong></p>
+    <section id="about">
+      <h2>About</h2>
+      <p><strong>WealthyAdventures</strong> was born from a simple idea: to break down the walls of the financial world and welcome everyone in. We believe investing is for *everyone*, not just the rich or the math-savvy.</p>
+      <p>We're on a mission to make financial literacy accessible, relatable, and real — starting with this newsletter and soon expanding to tools, resources, and a thriving community.</p>
+    </section>
+
+    <section id="newsletter">
+      <h2>Newsletter</h2>
+      <p>Join thousands of readers staying updated on how the financial and business world is evolving. Every week, we send powerful, easy-to-understand insights that help you grow your wealth, confidently and consistently.</p>
+      <p><strong>Subscribe now and be part of a movement that’s redefining money talk.</strong></p>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <p>Want to collaborate, share your story, or just say hi?</p>
+      <p>Email us at: <a href="mailto:hello@wealthyadventures.com">hello@wealthyadventures.com</a></p>
+      <p>Follow us on <a href="#">Instagram</a> and <a href="#">LinkedIn</a> for fresh financial inspiration every week.</p>
+    </section>
   </div>
 
   <footer>
-    <p>©2025 WealthyAdventures by Jagruti Goswami. All rights reserved.</p>
+    © 2025 WealthyAdventures by Jagruti Goswami. All rights reserved.
   </footer>
 
 </body>
