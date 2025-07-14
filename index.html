@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>WealthyAdventures</title>
+  <title>Wealthy Adventures</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Georgia&display=swap" rel="stylesheet">
   <style>
     * {
       margin: 0;
@@ -17,7 +18,6 @@
       color: #222;
     }
 
-    /* Navigation Bar */
     nav {
       background-color: #000;
       color: white;
@@ -25,6 +25,9 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
     }
 
     .logo {
@@ -40,10 +43,11 @@
       text-decoration: none;
       margin-left: 1.5rem;
       font-weight: 500;
+      transition: color 0.3s;
     }
 
     .nav-links a:hover {
-      text-decoration: underline;
+      color: #f1c40f;
     }
 
     .container {
@@ -71,22 +75,44 @@
       background: #000;
       color: #fff;
       text-align: center;
-      padding: 1rem;
+      padding: 1.2rem;
       margin-top: 3rem;
       font-size: 0.95rem;
     }
 
-    /* Optional: Add smooth scroll behavior */
+    a {
+      color: #0077cc;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
     html {
       scroll-behavior: smooth;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      nav {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .nav-links {
+        margin-top: 1rem;
+      }
+      .nav-links a {
+        display: block;
+        margin-left: 0;
+        margin-bottom: 0.5rem;
+      }
     }
   </style>
 </head>
 <body>
 
-  <!-- Navigation Bar -->
   <nav>
-    <div class="logo">W</div>
+    <div class="logo">Wealthy Adventures</div>
     <div class="nav-links">
       <a href="#about">About</a>
       <a href="#newsletter">Newsletter</a>
@@ -96,27 +122,28 @@
 
   <div class="container">
     <section id="about">
-      <h2>About</h2>
-      <p><strong>WealthyAdventures</strong> was born from a simple idea: to break down the walls of the financial world and welcome everyone in. We believe investing is for *everyone*, not just the rich or the math-savvy.</p>
-      <p>We're on a mission to make financial literacy accessible, relatable, and real — starting with this newsletter and soon expanding to tools, resources, and a thriving community.</p>
+      <h2>About Us</h2>
+      <p><strong>Wealthy Adventures</strong> was born from a simple yet powerful idea: to break down the walls of the financial world and welcome everyone in. We believe investing is for <em>everyone</em> — not just the rich or finance-savvy.</p>
+      <p>We’re here to simplify personal finance and build confidence — one lesson at a time. Through weekly newsletters, easy tools, and practical guides, we’re creating a movement that redefines what it means to talk about money.</p>
     </section>
 
     <section id="newsletter">
       <h2>Newsletter</h2>
-      <p>Join thousands of readers staying updated on how the financial and business world is evolving. Every week, we send powerful, easy-to-understand insights that help you grow your wealth, confidently and consistently.</p>
-      <p><strong>Subscribe now and be part of a movement that’s redefining money talk.</strong></p>
+      <p>Join hundreds of readers learning how to manage, save, and grow their money — without stress or jargon. Our weekly newsletter is packed with insights, real-life money tips, and tools to help you take control of your finances.</p>
+      <p><strong>✨ Subscribe now and begin your journey toward financial freedom.</strong></p>
+      <p><a href="https://your-substack-link.com" target="_blank">Click here to subscribe</a></p>
     </section>
 
     <section id="contact">
       <h2>Contact Us</h2>
-      <p>Want to collaborate, share your story, or just say hi?</p>
-      <p>Email us at: <a href="mailto:hello@wealthyadventures.com">hello@wealthyadventures.com</a></p>
-      <p>Follow us on <a href="#">Instagram</a> and <a href="#">LinkedIn</a> for fresh financial inspiration every week.</p>
+      <p>Have a question, want to collaborate, or just want to say hello?</p>
+      <p>Email: <a href="mailto:hello@wealthyadventures.com">hello@wealthyadventures.com</a></p>
+      <p>Follow us on <a href="https://instagram.com/wealthyadventures" target="_blank">Instagram</a> and <a href="https://linkedin.com" target="_blank">LinkedIn</a> for financial inspiration every week.</p>
     </section>
   </div>
 
   <footer>
-    © 2025 WealthyAdventures by Jagruti Goswami. All rights reserved.
+    © 2025 Wealthy Adventures by Jagruti Goswami. All rights reserved.
   </footer>
 
 </body>
