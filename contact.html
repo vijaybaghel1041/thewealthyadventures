@@ -1,0 +1,24 @@
+<div class="container">
+  <h1>Contact Us</h1>
+  <form id="contactForm">
+    <label for="name">Name</label>
+    <input type="text" id="name" required>
+    
+    <label for="email">Email</label>
+    <input type="email" id="email" required>
+    
+    <label for="phone">Phone Number</label>
+    <input type="tel" id="phone">
+    
+    <label for="message">Comment</label>
+    <textarea id="message" rows="4" required></textarea>
+    
+    <button type="submit">Send Message</button>
+  </form>
+</div>
+<script>
+  document.getElementById(\"contactForm\").addEventListener(\"submit\", function(e) {
+    e.preventDefault();
+    alert(\"Message sent! We'll be in touch soon.\");
+  });
+</script>
