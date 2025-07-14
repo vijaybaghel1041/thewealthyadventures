@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Wealthy Adventures</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Georgia&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
   <style>
     * {
       margin: 0;
@@ -20,7 +20,6 @@
 
     nav {
       background-color: #000;
-      color: white;
       padding: 1rem 2rem;
       display: flex;
       align-items: center;
@@ -30,18 +29,14 @@
       z-index: 1000;
     }
 
-    .logo {
-      font-size: 1.8rem;
-      font-weight: bold;
-      font-family: 'Georgia', serif;
-      letter-spacing: 2px;
-      color: white;
+    .nav-center {
+      display: flex;
+      gap: 2rem;
     }
 
     .nav-links a {
       color: white;
       text-decoration: none;
-      margin-left: 1.5rem;
       font-weight: 500;
       transition: color 0.3s;
     }
@@ -50,9 +45,15 @@
       color: #f1c40f;
     }
 
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: white;
+    }
+
     .container {
       max-width: 900px;
-      margin: 2rem auto;
+      margin: 3rem auto;
       padding: 2rem;
     }
 
@@ -61,90 +62,117 @@
       margin-bottom: 1rem;
     }
 
-    p {
+    p, label {
       font-size: 1.1rem;
       margin-bottom: 1.2rem;
-      line-height: 1.7;
+      line-height: 1.6;
     }
 
-    section {
-      margin-top: 3rem;
+    form input, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    form button {
+      background-color: #000;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+
+    form button:hover {
+      background-color: #333;
     }
 
     footer {
-      background: #000;
-      color: #fff;
+      background-color: #000;
+      color: white;
+      padding: 2rem;
       text-align: center;
-      padding: 1.2rem;
-      margin-top: 3rem;
+    }
+
+    footer .footer-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    footer a {
+      color: #ddd;
+      text-decoration: none;
       font-size: 0.95rem;
     }
 
-    a {
-      color: #0077cc;
-    }
-
-    a:hover {
+    footer a:hover {
       text-decoration: underline;
     }
 
-    html {
-      scroll-behavior: smooth;
+    .subscribe-box input[type=email] {
+      width: 80%;
+      padding: 8px;
+      margin-top: 10px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
     }
 
-    /* Responsive */
-    @media (max-width: 768px) {
-      nav {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-      .nav-links {
-        margin-top: 1rem;
-      }
-      .nav-links a {
-        display: block;
-        margin-left: 0;
-        margin-bottom: 0.5rem;
-      }
+    .subscribe-box button {
+      margin-top: 10px;
+      padding: 8px 15px;
+      border: none;
+      background-color: #f1c40f;
+      border-radius: 4px;
+      cursor: pointer;
     }
   </style>
 </head>
 <body>
-
   <nav>
-    <div class="logo">Wealthy Adventures</div>
-    <div class="nav-links">
-      <a href="#about">About</a>
-      <a href="#newsletter">Newsletter</a>
-      <a href="#contact">Contact Us</a>
+    <div class="logo">W</div>
+    <div class="nav-center nav-links">
+      <a href="index.html">Home</a>
+      <a href="newsletter.html">Newsletter</a>
+      <a href="contact.html">Contact Us</a>
     </div>
   </nav>
 
   <div class="container">
-    <section id="about">
-      <h2>About Us</h2>
-      <p><strong>Wealthy Adventures</strong> was born from a simple yet powerful idea: to break down the walls of the financial world and welcome everyone in. We believe investing is for <em>everyone</em> — not just the rich or finance-savvy.</p>
-      <p>We’re here to simplify personal finance and build confidence — one lesson at a time. Through weekly newsletters, easy tools, and practical guides, we’re creating a movement that redefines what it means to talk about money.</p>
-    </section>
-
-    <section id="newsletter">
-      <h2>Newsletter</h2>
-      <p>Join hundreds of readers learning how to manage, save, and grow their money — without stress or jargon. Our weekly newsletter is packed with insights, real-life money tips, and tools to help you take control of your finances.</p>
-      <p><strong>✨ Subscribe now and begin your journey toward financial freedom.</strong></p>
-      <p><a href="https://your-substack-link.com" target="_blank">Click here to subscribe</a></p>
-    </section>
-
-    <section id="contact">
-      <h2>Contact Us</h2>
-      <p>Have a question, want to collaborate, or just want to say hello?</p>
-      <p>Email: <a href="mailto:hello@wealthyadventures.com">hello@wealthyadventures.com</a></p>
-      <p>Follow us on <a href="https://instagram.com/wealthyadventures" target="_blank">Instagram</a> and <a href="https://linkedin.com" target="_blank">LinkedIn</a> for financial inspiration every week.</p>
-    </section>
+    <h1>Welcome to Wealthy Adventures</h1>
+    <p><strong>Wealthy Adventures</strong> is a platform to make personal finance feel easy, empowering, and actionable. We aim to break down complex money topics into simple, fun, and impactful content for everyday people. Whether you're new to budgeting, want to start investing, or just need better money habits — we're here for your growth.</p>
   </div>
 
   <footer>
-    © 2025 Wealthy Adventures by Jagruti Goswami. All rights reserved.
+    <div class="footer-grid">
+      <div>
+        <h4>Company</h4>
+        <a href="#">About Us</a><br>
+        <a href="#">Masterclass FAQ</a><br>
+        <a href="#">Investing Masterclass</a>
+      </div>
+      <div>
+        <h4>Legal</h4>
+        <a href="#">Privacy Policy</a><br>
+        <a href="#">Terms of Service</a>
+      </div>
+      <div>
+        <h4>Connect</h4>
+        <a href="https://instagram.com" target="_blank">Instagram</a><br>
+        <a href="https://tiktok.com" target="_blank">TikTok</a>
+      </div>
+      <div class="subscribe-box">
+        <h4>Subscribe</h4>
+        <p>Subscribe to our newsletter</p>
+        <input type="email" placeholder="Enter your email" />
+        <button>Subscribe</button>
+      </div>
+    </div>
+    <p>© 2025 Wealthy Adventures by Jagruti Goswami. All rights reserved.</p>
   </footer>
-
 </body>
 </html>
