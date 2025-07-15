@@ -1,4 +1,93 @@
-<div class="container">
-  <h1>Newsletters in Progress</h1>
-  <p>We’re working on exciting newsletters to help you master your money. Stay tuned and subscribe for updates!</p>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Newsletter | Wealthy Adventures</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: #ffffff;
+      color: #222;
+    }
+
+    nav {
+      background-color: #000;
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .nav-center {
+      display: flex;
+      gap: 2rem;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: #f1c40f;
+    }
+
+    .logo {
+      font-family: 'Great Vibes', cursive;
+      font-size: 2.5rem;
+      font-weight: normal;
+      color: white;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 3rem auto;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    iframe {
+      margin-top: 2rem;
+      border: 1px solid #eee;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="logo">
+      <a href="index.html">
+        <img src="/mnt/data/c1dfcbfe-5f6f-4533-81cc-2a012a976056.png" alt="Wealthy Adventures Logo" style="height: 50px;" />
+      </a>
+    </div>
+    <div class="nav-center nav-links">
+      <a href="index.html">Home</a>
+      <a href="newsletter.html">Newsletter</a>
+      <a href="contact.html">Contact Us</a>
+    </div>
+  </nav>
+
+  <div class="container">
+    <h1>Subscribe to Our Newsletter</h1>
+    <p>Weekly insights on personal finance, money tips, and wealth-building strategies – right to your inbox.</p>
+    <iframe src="https://wealthyadventures.substack.com/embed" width="480" height="320" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
+  </div>
+</body>
+</html>
